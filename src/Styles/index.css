@@ -11,6 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-body{
+
+body {
+  background-color: #fceef034;
   max-width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }

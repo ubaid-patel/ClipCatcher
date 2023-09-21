@@ -1,0 +1,99 @@
+.options {
+    width: 60%;
+    box-shadow: 1px 1px 10px black;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: white;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+.options table,
+.options td,
+th {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.options table {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+
+}
+
+.options button {
+    background-color: rgb(3, 128, 3);
+    font-size: medium;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    color: white;
+}
+
+.preview img {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    min-width: 200px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+
+@keyframes loaderRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    border: 4px dotted;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-top-color: #6c2d3500;
+    margin-left: 20px;
+    display: inline-block;
+    position: absolute;
+    right: -30px;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .options {
+        width: 90%;
+    }
+
+    .loader {
+        position: relative;
+        margin-right: 5px;
+        margin-left: 5px;
+        right: 0px;
+    }
+}
+.btnldr{
+    display: flex;
+    width: max-content;
+    margin: auto;
+    align-items: center;
+    position: relative;
+  }
+  
+.remove {
+     display: none;
+  }

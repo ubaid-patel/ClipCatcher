@@ -1,0 +1,109 @@
+.main {
+  min-height: 100vh;
+}
+
+.message {
+  padding: 10px 0px;
+  width: 60%;
+  height: 40px;
+  margin: auto;
+  border-radius: 15px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.form {
+  width: 60%;
+  height: 250px;
+  box-shadow: 1px 1px 10px black;
+  text-align: center;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: white;
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+
+.form input {
+  border: none;
+  outline: none;
+  font-size: medium;
+  height: 30px;
+  width: 90%;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.form button {
+  background-color: rgb(3, 128, 3);
+  font-size: medium;
+  min-width: 100px;
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  color: white;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.form button div {
+  margin: 0px 20px;
+}
+
+.loader {
+  border: 4px dotted;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-top-color: #6c2d3500;
+  margin-left: 20px;
+  display: inline-block;
+  position: absolute;
+  right: -30px;
+  animation: rotate 1s linear infinite;
+}
+
+.remove {
+  display: none;
+}
+
+.btnldr{
+  display: flex;
+  width: max-content;
+  margin: auto;
+  align-items: center;
+  position: relative;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .form {
+    width: 90%;
+  }
+
+  .message {
+    width: 90%;
+  }
+
+  .loader {
+    position: relative;
+    margin-right: 5px;
+    margin-left: 5px;
+    right: 0px;
+  }
+}
