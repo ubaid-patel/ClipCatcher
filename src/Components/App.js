@@ -25,11 +25,11 @@ function App() {
   useEffect(() => {
     const valid = isValidURL(url)
     if (url !== null && valid) {
-      loaderRef.current.classList.remove("remove")
+      loaderRef.current.classList.remove(styles.remove)
       getInfo(url).then(
         (response) => {
           setData(response)
-          loaderRef.current.classList.add("remove")
+          loaderRef.current.classList.add(styles.remove)
         })
     }
   }, [url])
