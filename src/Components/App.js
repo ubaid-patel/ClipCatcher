@@ -70,7 +70,7 @@ function App() {
           <Message message={message} setMessage={setMessage} />
         </div>
         <div className={styles.form}>
-          <input type='text' ref={linkRef} placeholder='Paste link here' onPaste={pasteUrl} onChange={changeUrl} /><br />
+          <input type='text' ref={linkRef} placeholder='Paste youtube link here to downlod' onPaste={pasteUrl} onChange={changeUrl} /><br />
           <div className={styles.btnldr}>
             <button onClick={handleFind}>Find</button>
             <div className={`${styles.loader} ${styles.remove}`} ref={loaderRef}></div>
